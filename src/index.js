@@ -10,4 +10,5 @@ server.use(express.json());
 
 server.use(filmesController);
 
-server.listen(process.env.PORT, () => {console.log(`API iniciada na porta ${process.env.PORT}`)});
+const port = process.env.PORT || 5000;
+server.listen(port, () => {console.log(`API iniciada na porta ${port}`)});
