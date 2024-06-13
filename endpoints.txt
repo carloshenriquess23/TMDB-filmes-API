@@ -1,0 +1,43 @@
+---Filtros página inicial---
+
+--Endpoint 1--
+Rota: /filmes/buscar/populares
+Método: GET
+TMDB URL: https://api.themoviedb.org/3/discover/movie
+Parâmetros query: api_key, language
+
+--Endpoint 2--
+Rota: /filmes/buscar/melhorAvaliados
+Método: GET
+TMDB URL: https://api.themoviedb.org/3/discover/movie
+Parâmetros query: sort_by, vote_count.gte
+
+--Endpoint 3--
+Rota: /filmes/buscar/populares/BR
+Método: GET
+TMDB URL: https://api.themoviedb.org/3/discover/movie
+Parâmetros query: api_key, language, with_origin_country
+
+---Página pesquisa endpoints---
+
+--Endpoint 1--
+Rota: /filmes/buscar/nome
+Método: GET
+TMDB URL: https://api.themoviedb.org/3/search/movie
+Parâmetros query: api_key, language, query, page
+
+---Filtros página filme---
+
+--Endpoint 1--
+Rota: /filmes/{id}
+Método: GET
+URL: https://api.themoviedb.org/3/movie/{filmeID}
+Parâmetros query: api_key, language
+Parâmetros de rota: filmeID
+
+--Endpoint 2--
+Rota: /filmes/{filmeId}/trailers
+Método: GET
+URL: https://api.themoviedb.org/3/movie/{filmeID}/videos
+Parâmetros query: api_key, language
+Parâmetros de rota: filmeID
