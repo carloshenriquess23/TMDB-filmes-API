@@ -29,14 +29,14 @@ Parâmetros query: api_key, language, query, page
 ---Filtros página filme---
 
 --Endpoint 1--
-Rota: /filmes/{id}
+Rota: /filme/{id}
 Método: GET
 URL: https://api.themoviedb.org/3/movie/{filmeID}
 Parâmetros query: api_key, language
 Parâmetros de rota: filmeID
 
 --Endpoint 2--
-Rota: /filmes/{filmeId}/trailers
+Rota: /filme/{filmeId}/trailers
 Método: GET
 URL: https://api.themoviedb.org/3/movie/{filmeID}/videos
 Parâmetros query: api_key, language
