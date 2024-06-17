@@ -97,7 +97,7 @@ server.get('/filmes/buscar/nome', async (req,resp) => {
     }
 });
 
-server.get('/filme/:id', async (req,resp) => {
+server.get('/filmes/:id', async (req,resp) => {
 
     try{
 
@@ -122,7 +122,7 @@ server.get('/filme/:id', async (req,resp) => {
     }
 });
 
-server.get('/filme/:id/trailers', async (req,resp) => {
+server.get('/filmes/:id/trailers', async (req,resp) => {
 
     try{
 
